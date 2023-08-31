@@ -133,7 +133,7 @@ require_once("../conexao.php");
                 </div>
 
                 <div class="modal-footer">
-
+                <h1>teste</h1>
                 <input value="<?php echo @$_GET['id'] ?>" type="hidden" name="txtid2" id="txtid2">
                 <input value="<?php echo @$cpf2 ?>" type="hidden" name="antigo" id="antigo">
                 <input value="<?php echo @$email2 ?>" type="hidden" name="antigo2" id="antigo2">
