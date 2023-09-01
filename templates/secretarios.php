@@ -77,7 +77,7 @@ require_once("../conexao.php");
                     $titulo = "Editar Registro";
                     $id2 = $_GET['id'];
 
-                    $query = $pdo->query("SELECT * FROM secretarios where id = '" . $id2 . "' ");
+                    $query = $pdo->query("SELECT * FROM secretarios where id = " . $id2 . " ");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
                     $nome2 = $res[0]['nome'];
