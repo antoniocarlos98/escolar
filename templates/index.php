@@ -116,17 +116,17 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="nome">Nome</label>
-                                <input value="<?php echo $nome ?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                                <input value="<?php echo @$nome ?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                             </div>
 
                             <div class="form-group">
                                 <label for="cpf">CPF</label>
-                                <input value="<?php echo $cpf ?>" type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                                <input value="<?php echo @$cpf ?>" type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input value="<?php echo $email ?>" type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <input value="<?php echo @$email ?>" type="email" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
 
                             <div class="form-group">

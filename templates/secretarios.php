@@ -93,12 +93,12 @@ require_once("../conexao.php");
 
                 ?>
 
-                <h5 class="modal-title" id="exampleModalLabel"><?php echo $titulo ?></h5>
+                <h5 class="modal-title" id="ModalInserirRegistroLabel"><?php echo $titulo ?></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="form" method="POST">
+            <form id="form-inserir" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     
 
@@ -108,7 +108,7 @@ require_once("../conexao.php");
                     </div>
                     <div class="form-group">
                         <label >CPF</label>
-                        <input value="<?php echo @$cpf2 ?>" type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                        <input value="<?php echo @$cpf2 ?>" type="text" class="form-control" id="cpf" name="CPF" placeholder="CPF">
                     </div>
                     <div class="form-group">
                         <label >Telefone</label>
