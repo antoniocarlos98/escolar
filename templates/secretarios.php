@@ -107,8 +107,8 @@ require_once("../conexao.php");
                         <input value="<?php echo @$nome2 ?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <label >CPF</label>
-                        <input value="<?php echo @$cpf2 ?>" type="text" class="form-control" id="cpf" name="CPF" placeholder="CPF">
+                        <label>CPF</label>
+                        <input value="<?php echo @$cpf2 ?>" type="text" class="form-control" id="cpf" name="CPF" placeholder="CPF" oninput="applyCpfMask(this)">
                     </div>
                     <div class="form-group">
                         <label >Telefone</label>
@@ -323,4 +323,21 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "endereco") {
         })
 
     });
+</script>
+<script type="text/javascript">
+    function applyCpfMask(input) {
+        // Remove any non-numeric characters
+        var cleaned = input.value.replace(/\D/g, '');
+
+        // Apply the CPF mask
+        if (cleaned.length <= 3) {
+            input.value = cleaned;
+        } else if (cleaned.length <= 6) {
+            input.value = cleaned.slice(0, 3) + '.' + cleaned.slice(3);
+        } else if (cleaned.length <= 9) {
+            input.value = cleaned.slice(0, 3) + '.' + cleaned.slice(3, 6) + '.' + cleaned.slice(6);
+        } else {
+            input.value = cleaned.slice(0, 3) + '.' + cleaned.slice(3, 6) + '.' + cleaned.slice(6, 9) + '-' + cleaned.slice(9, 11);
+        }
+    }
 </script>
