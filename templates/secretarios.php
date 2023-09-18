@@ -70,14 +70,13 @@ require_once("../conexao.php");
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <?php
-                /* continuando aqui */
+                <?php 
                 /* função de editar e inserir registro */
                 if (@$_GET['funcao'] == 'editar') {
                     $titulo = "Editar Registro";
                     $id2 = $_GET['id'];
 
-                    $query = $pdo->query("SELECT * FROM secretarios where id = " . $id2 . " ");
+                    $query = $pdo->query("SELECT * FROM secretarios where id = '" . $id2 . "' ");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
                     $nome2 = $res[0]['nome'];
@@ -85,55 +84,64 @@ require_once("../conexao.php");
                     $email2 = $res[0]['email'];
                     $endereco2 = $res[0]['endereco'];
                     $cpf2 = $res[0]['cpf'];
+                                                            
 
                 } else {
                     $titulo = "Inserir Registro";
 
                 }
 
-                ?>
 
-                <h5 class="modal-title" id="ModalInserirRegistroLabel"><?php echo $titulo ?></h5>
+                ?>
+                
+                <h5 class="modal-title" id="exampleModalLabel"><?php echo $titulo ?></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="form-inserir" method="POST" enctype="multipart/form-data">
+            <form id="form" method="POST">
                 <div class="modal-body">
-                    
 
                     <div class="form-group">
                         <label >Nome</label>
                         <input value="<?php echo @$nome2 ?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <label>CPF</label>
-                        <input value="<?php echo @$cpf2 ?>" type="text" class="form-control" id="cpf" name="CPF" placeholder="CPF" oninput="applyCpfMask(this)">
+                        <label >CPF</label>
+                        <input value="<?php echo @$cpf2 ?>" type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" oninput="applyCpfMask(this)">
                     </div>
                     <div class="form-group">
                         <label >Telefone</label>
-                        <input value="<?php echo @$telefone2 ?>" type="text" class="form-control" id="telefone" name="telefone" placeholder="telefone">
+                        <input value="<?php echo @$telefone2 ?>" type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
                     <div class="form-group">
                         <label >Email</label>
-                        <input value="<?php echo @$email2 ?>" type="text" class="form-control" id="email" name="email" placeholder="email">
+                        <input value="<?php echo @$email2 ?>" type="text" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label >Endereco</label>
-                        <input value="<?php echo @$endereco2 ?>" type="text" class="form-control" id="endereco" name="endereco" placeholder="endereco">
+                        <label >Endereço</label>
+                        <input value="<?php echo @$endereco2 ?>" type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço">
                     </div>
-                    
-                    <!-- Inside the modal-body -->
                     <div id="message-container"></div>
                     <!-- Inside the modal-body -->
+
+                  
+                   
+
                     <small>
                         <div id="mensagem">
+
                         </div>
-                    </small>
+                    </small> 
+
                 </div>
 
+
+
                 <div class="modal-footer">
-                
+
+
+
                 <input value="<?php echo @$_GET['id'] ?>" type="hidden" name="txtid2" id="txtid2">
                 <input value="<?php echo @$cpf2 ?>" type="hidden" name="antigo" id="antigo">
                 <input value="<?php echo @$email2 ?>" type="hidden" name="antigo2" id="antigo2">
