@@ -244,7 +244,7 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "endereco") {
 
 ?>
 <!--continuando -->
-<!--AJAX PARA INSERÇÃO E EDIÇÃO DOS DADOS COM IMAGEM -->
+<!--AJAX PARA INSERÇÃO E EDIÇÃO DOS DADOS -->
 <script type="text/javascript">
     $("#form").submit(function () {
         var pag = "<?=$pag?>";
@@ -279,11 +279,11 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "endereco") {
             cache: false,
             contentType: false,
             processData: false,
-            xhr: function () {  // Custom XMLHttpRequest
+            xhr: function () { 
                 var myXhr = $.ajaxSettings.xhr();
                 if (myXhr.upload) { // Avalia se tem suporte a propriedade upload
                     myXhr.upload.addEventListener('progress', function () {
-                        /* faz alguma coisa durante o progresso do upload */
+                        
                     }, false);
                 }
                 return myXhr;
@@ -334,10 +334,10 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "endereco") {
 </script>
 <script type="text/javascript">
     function applyCpfMask(input) {
-        // Remove any non-numeric characters
+        
         var cleaned = input.value.replace(/\D/g, '');
 
-        // Apply the CPF mask
+        // CPF mask
         if (cleaned.length <= 3) {
             input.value = cleaned;
         } else if (cleaned.length <= 6) {

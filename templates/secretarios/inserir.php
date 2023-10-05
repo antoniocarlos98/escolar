@@ -3,17 +3,14 @@ require_once("../../conexao.php");
 
 
 $method = $_SERVER['REQUEST_METHOD'];
-//$path = $_SERVER['PATH_INFO'];
 
 if ($method === 'GET') {
     if ($path === '/secretarios') {
-        // Implement logic to retrieve and return a list of secretaries
         $query = $pdo->query("SELECT * FROM secretarios");
         $secretarios = $query->fetchAll(PDO::FETCH_ASSOC);
         echo json_encode($secretarios);
     } elseif (preg_match('/\/secretarios\/(\d+)/', $path, $matches)) {
         $secretaryId = $matches[1];
-        // Implement logic to retrieve and return details of a specific secretary
         $query = $pdo->query("SELECT * FROM secretarios WHERE id = $secretaryId");
         $secretary = $query->fetch(PDO::FETCH_ASSOC);
         if ($secretary) {
@@ -25,7 +22,6 @@ if ($method === 'GET') {
         echo json_encode(['message' => 'Invalid endpoint']);
     }
 } elseif ($method === 'POST') {
-    // ... (Keep your existing POST logic here)
 $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
 $cpf = $_POST['cpf'];
@@ -51,11 +47,11 @@ if($cpf == ""){
 	exit();
 }
 } elseif ($method === 'PUT') {
-    // ... (Keep your existing PUT logic here)
+    
 	parse_str(file_get_contents("php://input"), $put_vars);
     $id = $put_vars['id'];
 } elseif ($method === 'DELETE') {
-    // ... (Keep your existing DELETE logic here)
+    
 	parse_str(file_get_contents("php://input"), $delete_vars);
     $id = $delete_vars['id'];
 } else {
