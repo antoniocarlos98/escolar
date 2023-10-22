@@ -1,16 +1,46 @@
-<?php
+<?php 
+$url = "http://$_SERVER[HTTP_HOST]/";
+$url_sistema = explode("//", $url);
+if($url_sistema[1] == 'localhost/'){
+	$url = "http://$_SERVER[HTTP_HOST]/sistema_escolar/";
+}
 
-$nome_escola = "Cesar Pinheiro";
-$url = "http://localhost/escolar/";
-$endereco_escola = "Mirasselvas";
-$telefone_escola = "(91)98341-8008";
-$email_adm = "antoniocarlos0724@gmail.com";
-$rodape_relatorios = "Desenvolvido por Antonio Carlos e Joao Pedro";
 
-//variaveis do Banco de Dados local
+//VARIAVEIS DO BANCO DE DADOS LOCAL
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
 $banco = 'sistema_escolar';
 
-?>
+
+/*
+//VARIAVEIS DO BANCO DE DADOS HOSPEDADO
+$servidor = 'sh-pro24.hostgator.com.br';
+$usuario = 'hugocu75_escolar';
+$senha = 'escolarhugo';
+$banco = 'hugocu75_escolar';
+*/
+
+
+//PASSAMOS PARA UMA TABELA
+/*
+$nome_escola = "Escola César Pinheiro";
+$endereco_escola = "Mirasselvas, Capanema-PA";
+$telefone_escola = "(91)98341-8008";
+$email_adm = 'antoniocarlos0724@gmail.com';
+$rodape_relatorios = "Desenvolvido por Antonio Carlos e João Pedro";
+$cnpj_escola = '26.100.560/0000-50';
+$cidade_escola = 'Capanema';
+
+//VARIAVEIS GLOBAIS
+$pgto_boleto = 'Não';  //DEIXAR SIM PARA PAGAMENTOS COM BOLETO OU CARNE, APENAS PARA DAR A POSSIBILIDADE DO TESOUREIRO CARREGAR OS ARQUIVOS
+
+$media_porcentagem_presenca = 70; //70 define que a média limite para presença é de 70%;
+
+$media_pontos_minimo_aprovacao = 60; // o aluno vai precisar de no minimo 60 pontos para aprovação no curso
+
+$maximo_pontos_disciplina = 100; // Maximo de pontos possiveis para distribuir em cada disciplina
+
+$carga_horaria_cert = 250; //TEMPO EM HORAS DOS CURSOS
+*/
+ ?>
