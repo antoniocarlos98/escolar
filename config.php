@@ -24,7 +24,7 @@ $banco = 'hugocu75_escolar';
 
 //PASSAMOS PARA UMA TABELA
 /*
-$nome_escola = "Escola César Pinheiro";
+$nome_escola = "César Pinheiro";
 $endereco_escola = "Mirasselvas, Capanema-PA";
 $telefone_escola = "(91)98341-8008";
 $email_adm = 'antoniocarlos0724@gmail.com';

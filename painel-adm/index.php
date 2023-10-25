@@ -441,8 +441,8 @@ $idUsuario = @$res[0]['id'];
 
 
                                 <div class="row">
-
-                                    <div class="col-md-3">
+<!--  Modal Perfil-->
+                                   <!-- <div class="col-md-3">
                                          <div class="form-group">
                                         <label >PGTO Boleto</label>
                                         <select class="form-control-sm" name="pgto_boleto" style="width:100%">
@@ -450,7 +450,7 @@ $idUsuario = @$res[0]['id'];
                                             <option value="Não" <?php if($pgto_boleto == "Não"){ echo 'selected'; } ?>>Não</option>
                                         </select>
                                     </div>
-                                    </div>
+                                    </div>-->
 
 
                                      <div class="col-md-4">
