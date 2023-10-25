@@ -133,7 +133,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
                     $dia2 = $res[0]['dia'];
                     $data_inicio2 = $res[0]['data_inicio'];
                     $data_final2 = $res[0]['data_final'];
-                    $valor_mensalidade2 = $res[0]['valor_mensalidade'];
+                    //$valor_mensalidade2 = $res[0]['valor_mensalidade'];
                     $ano2 = $res[0]['ano'];
 
 
@@ -256,12 +256,13 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
             <input value="<?php echo @$dia2 ?>" type="text" class="form-control" id="dia" name="dia" placeholder="Segunda à Sexta">
         </div>
     </div>
-    <div class="col-md-4">
+    <!-- Modal -->
+   <!-- <div class="col-md-4">
        <div class="form-group">
         <label >Valor Mensalidade</label>
         <input value="<?php echo @$valor_mensalidade2 ?>" type="text" class="form-control" id="valor_mensalidade" name="valor_mensalidade" placeholder="Valor da Mensalidade">
     </div>
-</div>
+</div>-->
 <div class="col-md-4">
     <div class="form-group">
         <label >Ano Início</label>
