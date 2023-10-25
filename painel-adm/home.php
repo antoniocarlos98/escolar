@@ -17,13 +17,13 @@ $dataInicioMes = $ano_atual."-".$mes_atual."-01";
 
 
 
-$saldo = 0;
-$entradas = 0;
-$saidas = 0;
-$saldoF = 0;
-$entradasF = 0;
-$saidasF = 0;
-$query = $pdo->query("SELECT * FROM movimentacoes where data = curDate() ");
+//$saldo = 0;
+//$entradas = 0;
+//$saidas = 0;
+//$saldoF = 0;
+//$entradasF = 0;
+//$saidasF = 0;
+/*$query = $pdo->query("SELECT * FROM movimentacoes where data = curDate() ");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
 for ($i=0; $i < @count($res); $i++) { 
@@ -51,15 +51,15 @@ for ($i=0; $i < @count($res); $i++) {
 	$entradasF = number_format($entradas, 2, ',', '.');
 	$saidasF = number_format($saidas, 2, ',', '.');
 
-}
+}*/
 
 
 
 
-$saldoMes = 0;
-$entradasMes = 0;
-$saidasMes = 0;
-$query = $pdo->query("SELECT * FROM movimentacoes where data >= '$dataInicioMes' and data <= curDate() ");
+//$saldoMes = 0;
+//$entradasMes = 0;
+//$saidasMes = 0;
+/*$query = $pdo->query("SELECT * FROM movimentacoes where data >= '$dataInicioMes' and data <= curDate() ");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
 for ($i=0; $i < @count($res); $i++) { 
@@ -90,7 +90,7 @@ for ($i=0; $i < @count($res); $i++) {
 
 
 
-$query = $pdo->query("SELECT * FROM contas_pagar where data_venc = curDate()");
+/*$query = $pdo->query("SELECT * FROM contas_pagar where data_venc = curDate()");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $vencimentosDia = @count($res);
 $total_vencimento_dia = 0;
@@ -99,7 +99,7 @@ for ($i=0; $i < @count($res); $i++) {
 	}
 	$total_vencimento_dia = $total_vencimento_dia + $res[$i]['valor'];
 }
-$total_vencimento_dia = number_format($total_vencimento_dia, 2, ',', '.');
+$total_vencimento_dia = number_format($total_vencimento_dia, 2, ',', '.');*/
 
 
 
@@ -125,7 +125,7 @@ $totalDisc = @count($res);
 
 
 //CAPTURAR % DE INADIMPLENCIA
-$query = $pdo->query("SELECT * FROM pgto_matriculas where data_venc < curDate()");
+/*$query = $pdo->query("SELECT * FROM pgto_matriculas where data_venc < curDate()");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $totalMatriculas = @count($res);
 
@@ -137,13 +137,13 @@ if($totalMatriculasPendentes > 0){
 	$porcentagemInad = number_format($porcentagemInad, 2, ',', '.');
 }else{
 	$porcentagemInad = 0;
-}
+}*/
 
 
 
 
 //QUANTIDADE DE ALUNOS INADIMPLENTES
-$total_alunos_debito = 0;
+/*$total_alunos_debito = 0;
 
 $query = $pdo->query("SELECT * FROM alunos");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -172,7 +172,7 @@ for ($i=0; $i < @count($res); $i++) {
 			
 
 	}
-}
+}*/
 
 
 
@@ -187,7 +187,7 @@ for ($i=0; $i < @count($res); $i++) {
 <?php } ?>
 
 	<!-- Earnings (Monthly) Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card border-left-success shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -201,10 +201,10 @@ for ($i=0; $i < @count($res); $i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- Earnings (Monthly) Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card border-left-danger shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -218,10 +218,10 @@ for ($i=0; $i < @count($res); $i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- Earnings (Monthly) Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card <?php echo $corTotal2 ?> shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -235,10 +235,10 @@ for ($i=0; $i < @count($res); $i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- Pending Requests Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card <?php echo $corTotal2Mes ?> shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -253,7 +253,7 @@ for ($i=0; $i < @count($res); $i++) {
 			</div>
 		</div>
 	</div>
-</div>
+</div>-->
 
 
 
@@ -262,9 +262,9 @@ for ($i=0; $i < @count($res); $i++) {
 
 
 
-<div class="row">
+<!--<div class="row">-->
 	<!-- Earnings (Monthly) Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card border-left-danger shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -278,10 +278,10 @@ for ($i=0; $i < @count($res); $i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- Earnings (Monthly) Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card border-left-danger shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -295,10 +295,10 @@ for ($i=0; $i < @count($res); $i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- Earnings (Monthly) Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card border-left-primary shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -313,10 +313,10 @@ for ($i=0; $i < @count($res); $i++) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- Pending Requests Card Example -->
-	<div class="col-xl-3 col-md-6 mb-4">
+	<!--<div class="col-xl-3 col-md-6 mb-4">
 		<div class="card border-left-danger shadow h-100 py-2">
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
@@ -331,7 +331,7 @@ for ($i=0; $i < @count($res); $i++) {
 			</div>
 		</div>
 	</div>
-</div>
+</div>-->
 
 
 

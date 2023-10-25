@@ -11,12 +11,12 @@ try {
 }
 
 
-//recuperar configurações,,, ativo = 'Sim'
+//recuperar configurações
 $query = $pdo->query("SELECT * FROM config");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_config = @count($res);
 if($total_config == 0){
-	$pdo->query("INSERT INTO config SET nome_escola = 'Escola César Pinheiro', telefone_escola = '(00)00000-0000', email_adm = 'antoniocarlos0724@gmail.com', endereco_escola = 'Rua X, Número 10 Bairro X', cidade_escola = 'Capanema', rodape_relatorios = 'Texto que vai aparecer no rodapé dos relatórios', cnpj_escola = '00000000000000', pgto_boleto = 'Sim', media_porcentagem_presenca = '70', media_pontos_minimo_aprovacao = '60', maximo_pontos_disciplina = '100', carga_horaria_cert = '250', ativo = 'Sim'");
+	$pdo->query("INSERT INTO config SET nome_escola = 'Escola Cesár Pinheiro', telefone_escola = '(00)00000-0000', email_adm = 'contato@hugocursos.com.br', endereco_escola = 'Rua X, Número 10 Bairro X', cidade_escola = 'Belo Horizonte', rodape_relatorios = 'Texto que vai aparecer no rodapé dos relatórios', cnpj_escola = '00000000000000', pgto_boleto = 'Sim', media_porcentagem_presenca = '70', media_pontos_minimo_aprovacao = '60', maximo_pontos_disciplina = '100', carga_horaria_cert = '250', ativo = 'Sim'");
 }else{
 	$nome_escola = $res[0]['nome_escola'];
 	$telefone_escola = $res[0]['telefone_escola'];

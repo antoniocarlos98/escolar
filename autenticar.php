@@ -36,12 +36,10 @@ if($total_reg > 0){
 	if($nivel == 'aluno'){
 		echo "<script language='javascript'> window.location='painel-aluno' </script>";
 	}
-// vai sair dps
-/*
+
 	if($nivel == 'tesoureiro'){
 		echo "<script language='javascript'> window.location='painel-tesoureiro' </script>";
 	}
-*/
 	
 }else{
 	echo "<script language='javascript'> window.alert('Usuário ou Senha Incorreta!') </script>";

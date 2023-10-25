@@ -76,11 +76,11 @@ body {font-family: 'Tw Cen MT', sans-serif;}
 
 <div id="header" >
 
-	<div style="border-style: solid; font-size: 10px; height: 50px;">
+	<div style="border-style: solid; font-size: 4px; height: 75px;">
 		<table style="width: 100%; border: 0px solid #ccc;">
 			<tr>
 				<td style="border: 1px; solid #000; width: 20%; text-align: left;">
-					<img style="margin-top: 0px; margin-left: 7px;" id="imag" src="<?php echo $url ?>img/logo.jpg" width="110px">
+					<img style="margin-top: 0px; margin-left: 7px;" id="imag" src="<?php echo $url ?>img/logosis.jpg" width="70px">
 				</td>
 				<td style="width: 20%; text-align: left; font-size: 13px;">
 				

@@ -2,7 +2,7 @@
 $url = "http://$_SERVER[HTTP_HOST]/";
 $url_sistema = explode("//", $url);
 if($url_sistema[1] == 'localhost/'){
-	$url = "http://$_SERVER[HTTP_HOST]/sistema_escolar/";
+	$url = "http://$_SERVER[HTTP_HOST]/escolar/";
 }
 
 
@@ -10,7 +10,7 @@ if($url_sistema[1] == 'localhost/'){
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
-$banco = 'sistema_escolar';
+$banco = 'escolar';
 
 
 /*
@@ -24,10 +24,10 @@ $banco = 'hugocu75_escolar';
 
 //PASSAMOS PARA UMA TABELA
 /*
-$nome_escola = "César Pinheiro";
+$nome_escola = "Escola Cesár Pinheiro";
 $endereco_escola = "Mirasselvas, Capanema-PA";
 $telefone_escola = "(91)98341-8008";
-$email_adm = 'antoniocarlos0724@gmail.com';
+$email_adm = 'admin@hotmail.com';
 $rodape_relatorios = "Desenvolvido por Antonio Carlos e João Pedro";
 $cnpj_escola = '26.100.560/0000-50';
 $cidade_escola = 'Capanema';

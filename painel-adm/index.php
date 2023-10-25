@@ -35,7 +35,7 @@ $idUsuario = @$res[0]['id'];
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
-        <meta name="author" content="Antonio Carlos e Joao Pedro">
+        <meta name="author" content="Hugo Vasconcelos">
 
         <title>Painel Administrativo</title>
 
@@ -98,7 +98,7 @@ $idUsuario = @$res[0]['id'];
                             <a class="collapse-item" href="index.php?pag=<?php echo $menu1 ?>">Secretários</a>
                             <a class="collapse-item" href="index.php?pag=<?php echo $menu2 ?>">Professores</a>
 
-                            <!-- <a class="collapse-item" href="index.php?pag=<?php echo $menu3 ?>">Tesoureiros</a>-->
+                             <!--<a class="collapse-item" href="index.php?pag=<?php echo $menu3 ?>">Tesoureiros</a>-->
                             <a class="collapse-item" href="index.php?pag=<?php echo $menu4 ?>">Funcionários</a>
                              <a class="collapse-item" href="index.php?pag=<?php echo $menu8 ?>">Usuários</a>
                         </div>
@@ -129,11 +129,11 @@ $idUsuario = @$res[0]['id'];
                         <span>Painel Secretaria</span></a>
                 </li>
 
-                 <!--<li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="../painel-tesoureiro" target="_blank">
                         <i class="fas fa-dollar-sign fa-chart-area"></i>
                         <span>Painel Tesouraria</span></a>
-                </li>-->
+                </li>-->    
 
                 <!-- Divider -->
                 <hr class="sidebar-divider">
@@ -219,7 +219,7 @@ $idUsuario = @$res[0]['id'];
                         } else if (@$pag==$menu2) {
                         @include_once(@$menu2.".php");
 
-                        /*} else if (@$pag==$menu3) {
+                         /*} else if (@$pag==$menu3) {
                         include_once(@$menu3.".php");*/
 
                         } else if (@$pag==$menu4) {
@@ -441,8 +441,8 @@ $idUsuario = @$res[0]['id'];
 
 
                                 <div class="row">
-<!--  Modal Perfil-->
-                                   <!-- <div class="col-md-3">
+
+                                    <!--<div class="col-md-3">
                                          <div class="form-group">
                                         <label >PGTO Boleto</label>
                                         <select class="form-control-sm" name="pgto_boleto" style="width:100%">
@@ -528,7 +528,7 @@ $idUsuario = @$res[0]['id'];
                                             </div>
 
                                             <div id="">                   
-                                                <img src="../img/logoofc.jpg." width="100" id="target_logo_rel">   
+                                                <img src="../img/logo.jpg" width="100" id="target_logo_rel">   
                                             </div>
                                      </div>
                                        

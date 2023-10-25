@@ -87,9 +87,9 @@ $idUsuario = @$res[0]['id'];
 
                 <?php 
 
-$query = $pdo->query("SELECT * FROM professores where cpf = '$cpf_usu' ");
-$res = $query->fetchAll(PDO::FETCH_ASSOC);
-$id_prof = $res[0]['id'];
+            $query = $pdo->query("SELECT * FROM professores where cpf = '$cpf_usu' ");
+            $res = $query->fetchAll(PDO::FETCH_ASSOC);
+            $id_prof = $res[0]['id'];
 
 
 
@@ -160,7 +160,7 @@ $id_prof = $res[0]['id'];
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <img class="mt-2" src="../img/logo.png" width="150">
+                        <img class="mt-2" src="../img/logo.png" width="146" height="78">
 
 
 

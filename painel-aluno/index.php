@@ -190,7 +190,7 @@ $id_aluno = @$res[0]['id'];
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <img class="mt-2" src="../img/logo.png" width="150">
+                    <img class="mt-2" src="../img/logo.png" width="146" height="78">
 
 
 

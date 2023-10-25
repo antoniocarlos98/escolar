@@ -186,7 +186,7 @@ for ($i3=0; $i3 < count($res3); $i3++) {
 		
 			<div class="row titulos">
 				<div class="col-sm-2 esquerda_float image">	
-					<img src="../img/logo.png" width="170px">
+					<img src="../img/logo.png" width="150" height="100">
 				</div>
 				<div class="col-sm-8 esquerda_float">	
 					<h2 class="titulo"><b><?php echo strtoupper($nome_escola) ?></b></h2>
@@ -270,7 +270,7 @@ for ($i3=0; $i3 < count($res3); $i3++) {
 
                    $query2 = $pdo->query("SELECT * FROM chamadas where turma = '$turma' and aluno = '$id_aluno' and aula = '$id_aula' ");
                   $res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
-                  $presenca = $res2[0]['presenca'];
+                  $presenca = @$res2[0]['presenca'];
 
                   if($presenca == 'P'){
                     $classe_chamada = 'blue';

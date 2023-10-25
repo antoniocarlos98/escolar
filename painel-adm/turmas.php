@@ -133,7 +133,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
                     $dia2 = $res[0]['dia'];
                     $data_inicio2 = $res[0]['data_inicio'];
                     $data_final2 = $res[0]['data_final'];
-                    //$valor_mensalidade2 = $res[0]['valor_mensalidade'];
+                    $valor_mensalidade2 = $res[0]['valor_mensalidade'];
                     $ano2 = $res[0]['ano'];
 
 
