@@ -5,7 +5,7 @@ require_once("../conexao.php");
     //variaveis para o menu
 $pag = @$_GET["pag"];
 $menu1 = "matriculas";
-$menu2 = "mensalidades";
+//$menu2 = "mensalidades";
 $menu3 = "pagar";
 $menu4 = "funcionarios";
 $menu5 = "disciplinas";
@@ -95,7 +95,7 @@ $id_aluno = @$res[0]['id'];
 
             $query = $pdo->query("SELECT * FROM alunos where cpf = '$cpf_usu' ");
             $res = $query->fetchAll(PDO::FETCH_ASSOC);
-            $id_aluno = $res[0]['id'];
+            $id_aluno = @$res[0]['id'];
 
             $query = $pdo->query("SELECT * FROM matriculas where aluno = '$id_aluno' order by id desc ");
             $res = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -235,8 +235,8 @@ $id_aluno = @$res[0]['id'];
                     } else if (@$pag==$menu1) {
                         @include_once(@$menu1.".php");
                         
-                    } else if (@$pag==$menu2) {
-                        @include_once(@$menu2.".php");
+                    /*} else if (@$pag==$menu2) {
+                        @include_once(@$menu2.".php");*/
 
                     } else if (@$pag==$menu3) {
                         include_once(@$menu3.".php");

@@ -124,7 +124,7 @@ require_once("verificar.php");
                     $dia2 = $res[0]['dia'];
                     $data_inicio2 = $res[0]['data_inicio'];
                     $data_final2 = $res[0]['data_final'];
-                    $valor_mensalidade2 = $res[0]['valor_mensalidade'];
+                    //$valor_mensalidade2 = $res[0]['valor_mensalidade'];
                     $ano2 = $res[0]['ano'];
 
 
@@ -247,12 +247,13 @@ require_once("verificar.php");
             <input value="<?php echo @$dia2 ?>" type="text" class="form-control" id="dia" name="dia" placeholder="Segunda à Sexta">
         </div>
     </div>
-    <div class="col-md-4">
+    <!-- Modal -->
+    <!--<div class="col-md-4">
        <div class="form-group">
         <label >Valor Mensalidade</label>
         <input value="<?php echo @$valor_mensalidade2 ?>" type="text" class="form-control" id="valor_mensalidade" name="valor_mensalidade" placeholder="Valor da Mensalidade">
     </div>
-</div>
+</div>-->
 <div class="col-md-4">
     <div class="form-group">
         <label >Ano Início</label>
@@ -362,7 +363,7 @@ require_once("verificar.php");
                     $dia3 = $res[0]['dia'];
                     $data_inicio3 = $res[0]['data_inicio'];
                     $data_final3 = $res[0]['data_final'];
-                    $valor_mensalidade3 = $res[0]['valor_mensalidade'];
+                    //$valor_mensalidade3 = $res[0]['valor_mensalidade'];
                     $ano3 = $res[0]['ano'];
 
 
@@ -381,7 +382,7 @@ require_once("verificar.php");
                     $res_r = $query_r->fetchAll(PDO::FETCH_ASSOC);
                     $nome_prof3 = $res_r[0]['nome'];
 
-                    $valor_mensF = number_format($valor_mensalidade3, 2, ',', '.');
+                    //$valor_mensF = number_format($valor_mensalidade3, 2, ',', '.');
                     $data_inicioF = implode('/', array_reverse(explode('-', $data_inicio3)));
                     $data_finalF = implode('/', array_reverse(explode('-', $data_final3)));
                     
@@ -397,8 +398,8 @@ require_once("verificar.php");
                 <span><b>Data Início: </b> <i><?php echo $data_inicioF ?></i> </span><span class="ml-4"><b>Data Final: </b> <i><?php echo $data_finalF ?></i><br></span>
 
                 <span><b>Horário: </b> <i><?php echo $horario3 ?></i> </span><span class="ml-4"><b>Dias: </b> <i><?php echo $dia3 ?></i><br></span>
-
-                <span><b>Valor Mensalidade: </b> <i>R$ <?php echo $valor_mensF ?></i> </span><span class="ml-4"><b>Ano: </b> <i><?php echo $ano3 ?></i><br></span>
+<!-- Modal -->
+               <!-- <span><b>Valor Mensalidade: </b> <i>R$ <?php echo $valor_mensF ?></i> </span><span class="ml-4"><b>Ano: </b> <i><?php echo $ano3 ?></i><br></span>-->
 
 
                 <span><b>Total de Alunos: </b> <i> total</i> </span>
@@ -661,11 +662,11 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "confirmar") {
        $id_matricula = $pdo->lastInsertId();
 
      //GERAR AS PARCELAS DE PAGAMENTO MATRICULA
-     $query_r = $pdo->query("SELECT * FROM turmas where id = '$id_turma' ");
+     /*$query_r = $pdo->query("SELECT * FROM turmas where id = '$id_turma' ");
     $res_r = $query_r->fetchAll(PDO::FETCH_ASSOC);    
     $data_ini = $res_r[0]['data_inicio'];
     $data_fin = $res_r[0]['data_final'];
-    $valor_turma = $res_r[0]['valor_mensalidade'];
+    $valor_turma = $res_r[0]['valor_mensalidade'];*/
 
     //RECUPERAR O TOTAL DE MESES ENTRE DATAS
 $d1 = new DateTime($data_ini);

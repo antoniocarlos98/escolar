@@ -228,7 +228,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                     
                   
                   //VERIFICAR SE EXISTE ATRASO NO PAGAMENTO DAS MATRICULAS
-                     $query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id_mat' ");
+                     /*$query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id_mat' ");
                     $res_3 = $query_3->fetchAll(PDO::FETCH_ASSOC);
                    
 
@@ -240,7 +240,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                   $pago = $res_3[$i2]['pago'];
 
                   if($data_venc < date('Y-m-d') and $pago != 'Sim'){
-                    $atrasado = 'Sim';
+                    $atrasado = 'Sim';*/
                     }
 
                    
@@ -249,9 +249,9 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
               }
                 
                 ?>
-
+<!-- DataTales Example -->
               
-                       <span><small>
+                       <!--<span><small>
                              <?php if($atrasado == 'Sim'){ ?>
                              <a class="text-danger" href="index.php?pag=<?php echo $pag ?>&funcao=pagamentos&id=<?php echo $id_mat ?>"><i><?php echo $nome_disc; 
                                  $atrasado = 'Não';
@@ -263,7 +263,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                             <?php echo $dia ?> 
                             <?php echo $horario ?> </a>
                             <br></small></span>
-                            <hr style="margin:5px">
+                            <hr style="margin:5px">-->
                        
 
                     <?php  } } ?>
@@ -278,15 +278,15 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
 
 
 
+<!-- DataTales Example -->
 
 
-
-<div class="modal" id="modal-pagamentos" tabindex="-1" role="dialog" data-backdrop="static">
+<!--<div class="modal" id="modal-pagamentos" tabindex="-1" role="dialog" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <?php 
-                 $id_m = $_GET['id'];
+                 /*$id_m = $_GET['id'];
                      $query = $pdo->query("SELECT * FROM matriculas where id = '$id_m' ");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
                     $id = $res[0]['aluno'];
@@ -302,14 +302,14 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
 
                     $query = $pdo->query("SELECT * FROM disciplinas where id = '$disciplina' ");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
-                    $nome_disciplina = $res[0]['nome'];
+                    $nome_disciplina = $res[0]['nome'];*/
                  ?>
                 <h6 class="modal-title"><?php echo $nome_disciplina ?> - <?php echo $nome_aluno ?></h6>
                 <a type="button" class="close" href="index.php?pag=<?php echo $pag ?>&funcao=turmas&id=<?php echo $id ?>" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </a>
                 
-            </div>
+            </div>-->
             <div class="modal-body">
 
                 <?php 
