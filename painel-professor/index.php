@@ -89,7 +89,7 @@ $idUsuario = @$res[0]['id'];
 
             $query = $pdo->query("SELECT * FROM professores where cpf = '$cpf_usu' ");
             $res = $query->fetchAll(PDO::FETCH_ASSOC);
-            $id_prof = $res[0]['id'];
+            $id_prof = @$res[0]['id'];
 
 
 

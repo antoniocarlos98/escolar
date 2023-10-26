@@ -460,19 +460,19 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "turmas") {
 }
 
 
-if (@$_GET["funcao"] != null && @$_GET["funcao"] == "pagamentos") {
+/*if (@$_GET["funcao"] != null && @$_GET["funcao"] == "pagamentos") {
     echo "<script>$('#modal-pagamentos').modal('show');</script>";
-}
+}*/
 
 
-if (@$_GET["funcao"] != null && @$_GET["funcao"] == "baixa") {
+/*if (@$_GET["funcao"] != null && @$_GET["funcao"] == "baixa") {
 
     $id_pgto = $_GET['id'];
 
     require_once("baixar-mensalidade.php"); 
 
     echo "<script>window.location='index.php?pag=$pag&id=$id_mat&funcao=pagamentos';</script>";
-}
+}*/
 
 
 if (@$_GET["funcao"] != null && @$_GET["funcao"] == "upload") {
