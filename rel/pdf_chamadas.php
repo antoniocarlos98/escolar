@@ -136,7 +136,7 @@ for ($i3=0; $i3 < count($res3); $i3++) {
 	if($aula_get == ""){
 		echo '<span style="font-size:12px"><b><u>Aula '. ($i3+1) . ' - '. $nome.'</u></b></span>';
 	}else{
-		echo '<span style="font-size:12px"><b><u>Aula '. ($numero_aula+1) . ' - '.$nome.'</u></b> Data: '.$data_chamadaF.'</span>';
+		//echo '<span style="font-size:12px"><b><u>Aula '. ($numero_aula+1) . ' - '.$nome.'</u></b> Data: '.$data_chamadaF.'</span>';
 	}
 
 		 ?>

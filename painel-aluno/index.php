@@ -6,7 +6,7 @@ require_once("../conexao.php");
 $pag = @$_GET["pag"];
 $menu1 = "matriculas";
 //$menu2 = "mensalidades";
-$menu3 = "pagar";
+//$menu3 = "pagar";
 $menu4 = "funcionarios";
 $menu5 = "disciplinas";
 $menu6 = "salas";
@@ -238,8 +238,8 @@ $id_aluno = @$res[0]['id'];
                     /*} else if (@$pag==$menu2) {
                         @include_once(@$menu2.".php");*/
 
-                    } else if (@$pag==$menu3) {
-                        include_once(@$menu3.".php");
+                    /*} else if (@$pag==$menu3) {
+                        include_once(@$menu3.".php");*/
 
                     } else if (@$pag==$menu4) {
                         @include_once(@$menu4.".php");

@@ -233,7 +233,7 @@ for ($i3=0; $i3 < count($res3); $i3++) {
 	if($aula_get == ""){
 		echo '<b><u>Aula '. ($i3+1) . ' - '. $nome.'</u></b>';
 	}else{
-		echo '<b><u>Aula '. ($numero_aula+1) . ' - '.$nome.'</u></b> Data: '.$data_chamadaF;
+		//echo '<b><u>Aula '. ($numero_aula+1) . ' - '.$nome.'</u></b> Data: '.$data_chamadaF;
 	}
 
 		 ?>

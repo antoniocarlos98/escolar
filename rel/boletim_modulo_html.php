@@ -264,7 +264,7 @@ $data_hoje = mb_strtoupper(utf8_encode(strftime('%A, %d de %B de %Y', strtotime(
 
 		<div class="row">
 			<div class="col-sm-4 esquerda">	
-				<big> Aluno <?php echo $nome_aluno ?>  </big>
+				<big> Aluno(a) <?php echo $nome_aluno ?>  </big>
 			</div>
 			<div class="col-sm-8 direita" align="right">	
 				<big> <small><small> Data: <?php echo $data_hoje; ?></small></small> </big>

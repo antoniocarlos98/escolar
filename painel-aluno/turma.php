@@ -236,8 +236,8 @@ if($total_modulos > 0){
 
 
 <div class="row">
-
-  <div class="col-xl-3 col-md-6 mb-4">
+  <!--AJAX PARA LISTAR OS DADOS -->
+  <!--<div class="col-xl-3 col-md-6 mb-4">
    <a class="text-dark" href="" data-toggle="modal" data-target="#modal-pagamentos" title="Informações da Turma">
      <div class="card text-danger shadow h-100 py-2">
       <div class="card-body">
@@ -254,7 +254,7 @@ if($total_modulos > 0){
    </div>
  </div>
 </a>
-</div>
+</div>-->
 
 
 

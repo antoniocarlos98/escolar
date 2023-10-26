@@ -309,18 +309,18 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                     <span aria-hidden="true">&times;</span>
                     </a>
                 
-            </div>-->
-            <div class="modal-body">
+            </div>--> <!-- DataTales Example -->
+            <!--<div class="modal-body">-->
 
                 <?php 
-                if (@$_GET['funcao'] == 'pagamentos') {
+               /* if (@$_GET['funcao'] == 'pagamentos') {
 
-                    $id2 = $_GET['id'];
+                    $id2 = $_GET['id'];*/
 
                                      
                   
                   //VERIFICAR SE EXISTE ATRASO NO PAGAMENTO DAS MATRICULAS
-                     $query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id2' ");
+                     /*$query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id2' ");
                     $res_3 = $query_3->fetchAll(PDO::FETCH_ASSOC);
                    
 
@@ -339,7 +339,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                     }
 
                   $valor = number_format($valor, 2, ',', '.');
-                  $data_venc = implode('/', array_reverse(explode('-', $data_venc)));
+                  $data_venc = implode('/', array_reverse(explode('-', $data_venc)));*/
 
                   
                   
@@ -347,8 +347,8 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                 
                 ?>
 
-              
-                       <span><small>
+              <!-- DataTales Example -->
+                      <!-- <span><small>
                              <?php if($atrasado == 'Sim'){ ?>
                              <span class="text-danger"><i><?php echo $data_venc; 
                                  $atrasado = 'Não';
@@ -379,7 +379,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                              <?php } } ?>
                             
 
-                            <br></small></span>
+                            <br></small></span>-->
                        
 
                     <?php  } } ?>

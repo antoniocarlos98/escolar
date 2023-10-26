@@ -129,7 +129,7 @@ width:100%;
 <div class="descricao"> PARABÉNS PELA CONCLUSÃO COM EXCELÊNCIA DO TREINAMENTO <br><span class="text-warning"><?php echo mb_strtoupper($nome_curso, $encoding); ?></span> MINISTRADO PELA <?php echo mb_strtoupper($nome_escola) ?></div>
 
 <div class="carga"> <?php echo $carga_horaria_cert; ?> Horas - Emitido em <?php echo $data2; ?></div>
-<div class="cpf"> Documento do Aluno : <?php echo $cpf_aluno; ?> </div>
+<div class="cpf"> Documento do Aluno(a) : <?php echo $cpf_aluno; ?> </div>
 
 <img class="imagem" src="http://portal.hugocursos.com.br/certificados/certificado-fundo.jpg">
 
