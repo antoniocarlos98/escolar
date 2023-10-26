@@ -410,9 +410,9 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
 <!-- Modal -->
                <!-- <span><b>Valor Mensalidade: </b> <i>R$ <?php echo $valor_mensF ?></i> </span><span class="ml-4"><b>Ano: </b> <i><?php echo $ano3 ?></i><br></span>-->
 
-              <!-- <span><b>Total de Alunos: </b> <i><?php echo $total_alunos; ?></i> </span>-->
+              <span><b>Total de Alunos: </b> <i><?php echo $total_alunos ?></i> </span>
 
-                <span><b>Total de Alunos: </b> <i> total</i> </span>
+                
 
 
             </div>

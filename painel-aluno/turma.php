@@ -329,13 +329,13 @@ if($total_modulos > 0){
 
 
 
-
-<div class="modal" id="modal-pagamentos" tabindex="-1" role="dialog" data-backdrop="static">
+<!--excluir -->
+<!--<div class="modal" id="modal-pagamentos" tabindex="-1" role="dialog" data-backdrop="static">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <?php 
-        $id_m = $_GET['id'];
+        /*$id_m = $_GET['id'];
         $query = $pdo->query("SELECT * FROM matriculas where id = '$id_mat' ");
         $res = $query->fetchAll(PDO::FETCH_ASSOC);
         $id = $res[0]['aluno'];
@@ -351,7 +351,7 @@ if($total_modulos > 0){
 
         $query = $pdo->query("SELECT * FROM disciplinas where id = '$disciplina' ");
         $res = $query->fetchAll(PDO::FETCH_ASSOC);
-        $nome_disciplina = $res[0]['nome'];
+        $nome_disciplina = $res[0]['nome'];*/
         ?>
         <h6 class="modal-title"><?php echo $nome_disciplina ?></h6>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -371,7 +371,7 @@ if($total_modulos > 0){
               <th scope="col">Pago</th>
               
               <?php if($pgto_boleto == 'Sim'){ 
-                echo '<th scope="col">Arquivo</th>';
+                //echo '<th scope="col">Arquivo</th>';
               } ?>
               <th scope="col">Valor Pago</th>
               <th scope="col">Data Pgto</th>
@@ -384,7 +384,7 @@ if($total_modulos > 0){
 
 
                   //VERIFICAR SE EXISTE ATRASO NO PAGAMENTO DAS MATRICULAS
-            $query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id_mat' ");
+            /*$query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id_mat' ");
             $res_3 = $query_3->fetchAll(PDO::FETCH_ASSOC);
 
 
@@ -412,7 +412,7 @@ if($total_modulos > 0){
 
               $valor = number_format($valor, 2, ',', '.');
               $data_venc = implode('/', array_reverse(explode('-', $data_venc)));
-              $data_pgto = implode('/', array_reverse(explode('-', $data_pgto)));
+              $data_pgto = implode('/', array_reverse(explode('-', $data_pgto)));*/
 
 
 
@@ -426,7 +426,7 @@ if($total_modulos > 0){
                 <td>
                   <?php if($atrasado == 'Sim'){ ?>
                    <span class="text-danger"><?php echo $data_venc; 
-                   $atrasado = 'Não';
+                   //$atrasado = 'Não';
                    ?></span>
                  <?php }else{ ?>
                   <span class="text-dark"> <?php echo $data_venc ?></span>
@@ -461,9 +461,9 @@ if($total_modulos > 0){
               <td> <?php echo $valor_pago ?> </td>
                <td> <?php echo $data_pgto ?> </td>
 
-           </tr>
-
-         <?php  }  ?>
+           </tr>-->
+<!--ate aqui -->
+         
 
        </tbody>
      </table>

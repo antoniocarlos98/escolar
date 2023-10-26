@@ -21,7 +21,7 @@ move_uploaded_file($imagem_temp, $caminho);
 }
 
 
-$pdo->query("UPDATE pgto_matriculas SET arquivo = '$imagem' WHERE id = '$id'");
+//$pdo->query("UPDATE pgto_matriculas SET arquivo = '$imagem' WHERE id = '$id'");
 	
 
 echo 'Salvo com Sucesso!';
