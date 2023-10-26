@@ -63,7 +63,7 @@ if(@$_FILES['logo_rel']['name'] != ""){
 
 
 
-$res2 = $pdo->prepare("UPDATE config SET nome_escola = :nome_escola, telefone_escola = :telefone_escola, email_adm = :email_adm, endereco_escola = :endereco_escola, cidade_escola = :cidade_escola, rodape_relatorios = :rodape_relatorios, cnpj_escola = :cnpj_escola, pgto_boleto = :pgto_boleto, media_porcentagem_presenca = :media_porcentagem_presenca, media_pontos_minimo_aprovacao = :media_pontos_minimo_aprovacao, maximo_pontos_disciplina = :maximo_pontos_disciplina, carga_horaria_cert = :carga_horaria_cert");
+$res2 = $pdo->prepare("UPDATE config SET nome_escola = :nome_escola, telefone_escola = :telefone_escola, email_adm = :email_adm, endereco_escola = :endereco_escola, cidade_escola = :cidade_escola, rodape_relatorios = :rodape_relatorios, cnpj_escola = :cnpj_escola,  media_porcentagem_presenca = :media_porcentagem_presenca, media_pontos_minimo_aprovacao = :media_pontos_minimo_aprovacao, maximo_pontos_disciplina = :maximo_pontos_disciplina, carga_horaria_cert = :carga_horaria_cert");
 	
 $res2->bindValue(":nome_escola", $nome_escola);
 $res2->bindValue(":telefone_escola", $telefone_escola);
@@ -72,7 +72,7 @@ $res2->bindValue(":endereco_escola", $endereco_escola);
 $res2->bindValue(":cidade_escola", $cidade_escola);
 $res2->bindValue(":rodape_relatorios", $rodape_relatorios);
 $res2->bindValue(":cnpj_escola", $cnpj_escola);
-$res2->bindValue(":pgto_boleto", $pgto_boleto);
+//$res2->bindValue(":pgto_boleto", $pgto_boleto);
 $res2->bindValue(":media_porcentagem_presenca", $media_porcentagem_presenca);
 $res2->bindValue(":media_pontos_minimo_aprovacao", $media_pontos_minimo_aprovacao);
 $res2->bindValue(":maximo_pontos_disciplina", $maximo_pontos_disciplina);

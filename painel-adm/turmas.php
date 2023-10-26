@@ -678,7 +678,7 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "confirmar") {
     $valor_turma = $res_r[0]['valor_mensalidade'];*/
 
     //RECUPERAR O TOTAL DE MESES ENTRE DATAS
-$d1 = new DateTime($data_ini);
+/*$d1 = new DateTime($data_ini);
 $d2 = new DateTime($data_fin);
 $intervalo = $d1->diff( $d2 );
 $anos = $intervalo->y;
@@ -692,7 +692,7 @@ $meses = $intervalo->m + ($anos * 12);
          $res = $pdo->query("INSERT INTO pgto_matriculas SET matricula = '$id_matricula', valor = '$valor_turma', data_venc = '$data_nova', pago = 'Não'");
 
 
-    }
+    }*/
 
    }
 
