@@ -72,7 +72,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
 
                   $query2 = $pdo->query("SELECT * FROM matriculas where turma = '$id' order by id desc ");
                   $res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
-                  $total_alunos = @count($res2);
+                  $total_alunos = @count(@$res2);
 
 
                   ?>
@@ -410,6 +410,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
 <!-- Modal -->
                <!-- <span><b>Valor Mensalidade: </b> <i>R$ <?php echo $valor_mensF ?></i> </span><span class="ml-4"><b>Ano: </b> <i><?php echo $ano3 ?></i><br></span>-->
 
+              <!-- <span><b>Total de Alunos: </b> <i><?php echo $total_alunos; ?></i> </span>-->
 
                 <span><b>Total de Alunos: </b> <i> total</i> </span>
 
