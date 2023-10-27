@@ -32,7 +32,7 @@ $res_r = $query_r->fetchAll(PDO::FETCH_ASSOC);
 $disciplina = $res_r[0]['disciplina'];
 $data_inicio = $res_r[0]['data_inicio'];
 $data_final = $res_r[0]['data_final'];
-$valor = $res_r[0]['valor_mensalidade'];
+//$valor = $res_r[0]['valor_mensalidade'];
 
 
 
@@ -45,11 +45,11 @@ $meses = $intervalo->m + ($anos * 12);
 
 
 
-$data_inicioF = implode('/', array_reverse(explode('-', $data_inicio)));
+/*$data_inicioF = implode('/', array_reverse(explode('-', $data_inicio)));
 $data_finalF = implode('/', array_reverse(explode('-', $data_final)));
 $valor_total = $valor * $meses;
 $valor_mensalidadeF = number_format($valor, 2, ',', '.');
-$valor_totalF = number_format($valor_total, 2, ',', '.');
+$valor_totalF = number_format($valor_total, 2, ',', '.');*/
 
 $query_r = $pdo->query("SELECT * FROM disciplinas where id = '$disciplina' ");
 $res_r = $query_r->fetchAll(PDO::FETCH_ASSOC);
