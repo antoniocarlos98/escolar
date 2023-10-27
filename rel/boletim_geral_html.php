@@ -14,9 +14,9 @@ $nome_aluno = $res[0]['nome'];
 $query = $pdo->query("SELECT * FROM periodos where id = '$id_periodo'  order by id asc ");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
-$nome_periodo = $res[0]['nome'];
-$minimo_media = $res[0]['minimo_media'];
-$total_pontos = $res[0]['total_pontos'];
+$nome_periodo = @$res[0]['nome'];
+$minimo_media = @$res[0]['minimo_media'];
+$total_pontos = @$res[0]['total_pontos'];
 
 
 $query_2 = $pdo->query("SELECT * FROM turmas where id = '$id_turma' ");

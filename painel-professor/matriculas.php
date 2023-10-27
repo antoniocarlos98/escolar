@@ -226,9 +226,9 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                     
                     $nome_disc = $res_resp[0]['nome'];
                     
-                  
+                    //EXCLUIR
                   //VERIFICAR SE EXISTE ATRASO NO PAGAMENTO DAS MATRICULAS
-                     $query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id_mat' ");
+                    /* $query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id_mat' ");
                     $res_3 = $query_3->fetchAll(PDO::FETCH_ASSOC);
                    
 
@@ -246,15 +246,15 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                    
 
 
-              }
+              }*/
                 
                 ?>
-
-              
-                       <span><small>
+                    <!--EXCLUIR -->
+              <!--AJAX PARA INSERÇÃO E EDIÇÃO DOS DADOS COM IMAGEM -->
+                      <!-- <span><small>
                              <?php if($atrasado == 'Sim'){ ?>
                              <a class="text-danger" href="index.php?pag=<?php echo $pag ?>&funcao=pagamentos&id=<?php echo $id_mat ?>"><i><?php echo $nome_disc; 
-                                 $atrasado = 'Não';
+                                 //$atrasado = 'Não';
                               ?></i>
                              <?php }else{ ?>
                                  <a class="text-dark" href="index.php?pag=<?php echo $pag ?>&funcao=pagamentos&id=<?php echo $id_mat ?>"><i><?php echo $nome_disc ?></i>
@@ -263,7 +263,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                             <?php echo $dia ?> 
                             <?php echo $horario ?> </a>
                             <br></small></span>
-                            <hr style="margin:5px">
+                            <hr style="margin:5px">-->
                        
 
                     <?php  } } ?>
@@ -280,13 +280,13 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
 
 
 
-
-<div class="modal" id="modal-pagamentos" tabindex="-1" role="dialog" data-backdrop="static">
+<!--EXCLUIR -->
+<!--<div class="modal" id="modal-pagamentos" tabindex="-1" role="dialog" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <?php 
-                 $id_m = $_GET['id'];
+                 /*$id_m = $_GET['id'];
                      $query = $pdo->query("SELECT * FROM matriculas where id = '$id_m' ");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
                     $id = $res[0]['aluno'];
@@ -302,7 +302,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
 
                     $query = $pdo->query("SELECT * FROM disciplinas where id = '$disciplina' ");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
-                    $nome_disciplina = $res[0]['nome'];
+                    $nome_disciplina = $res[0]['nome'];*/
                  ?>
                 <h6 class="modal-title"><?php echo $nome_disciplina ?> - <?php echo $nome_aluno ?></h6>
                 <a type="button" class="close" href="index.php?pag=<?php echo $pag ?>&funcao=turmas&id=<?php echo $id ?>" aria-label="Close">
@@ -310,17 +310,17 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                     </a>
                 
             </div>
-            <div class="modal-body">
+            <div class="modal-body">-->
 
                 <?php 
-                if (@$_GET['funcao'] == 'pagamentos') {
+                /*if (@$_GET['funcao'] == 'pagamentos') {
 
-                    $id2 = $_GET['id'];
+                    $id2 = $_GET['id'];*/
 
                                      
                   
                   //VERIFICAR SE EXISTE ATRASO NO PAGAMENTO DAS MATRICULAS
-                     $query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id2' ");
+                     /*$query_3 = $pdo->query("SELECT * FROM pgto_matriculas where matricula = '$id2' ");
                     $res_3 = $query_3->fetchAll(PDO::FETCH_ASSOC);
                    
 
@@ -339,19 +339,19 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                     }
 
                   $valor = number_format($valor, 2, ',', '.');
-                  $data_venc = implode('/', array_reverse(explode('-', $data_venc)));
+                  $data_venc = implode('/', array_reverse(explode('-', $data_venc)));*/
 
                   
                   
              
                 
                 ?>
-
+                        <!--EXCLUIR -->
               
-                       <span><small>
+                       <!--<span><small>
                              <?php if($atrasado == 'Sim'){ ?>
                              <span class="text-danger"><i><?php echo $data_venc; 
-                                 $atrasado = 'Não';
+                                 //$atrasado = 'Não';
                               ?></i></span>
                              <?php }else{ ?>
                                  <span class="text-dark"><i><?php echo $data_venc ?></i></span>
@@ -382,7 +382,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                             <br></small></span>
                        
 
-                    <?php  } } ?>
+                    <?php  } } ?>-->
                
 
 
@@ -460,7 +460,7 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "turmas") {
 }
 
 
-if (@$_GET["funcao"] != null && @$_GET["funcao"] == "pagamentos") {
+/*if (@$_GET["funcao"] != null && @$_GET["funcao"] == "pagamentos") {
     echo "<script>$('#modal-pagamentos').modal('show');</script>";
 }
 
@@ -472,7 +472,7 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "baixa") {
     require_once("baixar-mensalidade.php"); 
 
     echo "<script>window.location='index.php?pag=$pag&id=$id_mat&funcao=pagamentos';</script>";
-}
+}*/
 
 
 if (@$_GET["funcao"] != null && @$_GET["funcao"] == "upload") {

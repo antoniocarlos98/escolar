@@ -35,7 +35,7 @@ $idUsuario = @$res[0]['id'];
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
-        <meta name="author" content="Hugo Vasconcelos">
+        <meta name="author" content="Antonio Carlos e João Pedro">
 
         <title>Painel Professor</title>
 
@@ -205,11 +205,11 @@ $idUsuario = @$res[0]['id'];
                         } else if (@$pag==$menu1) {
                         @include_once(@$menu1.".php");
                         
-                        } else if (@$pag==$menu2) {
+                        /*} else if (@$pag==$menu2) {
                         @include_once(@$menu2.".php");
 
                          } else if (@$pag==$menu3) {
-                        include_once(@$menu3.".php");
+                        include_once(@$menu3.".php");*/
 
                         } else if (@$pag==$menu4) {
                         @include_once(@$menu4.".php");
