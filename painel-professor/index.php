@@ -5,8 +5,8 @@
     //variaveis para o menu
     $pag = @$_GET["pag"];
     $menu1 = "matriculas";
-    $menu2 = "mensalidades";
-    $menu3 = "pagar";
+    //$menu2 = "mensalidades";
+    //$menu3 = "pagar";
     $menu4 = "funcionarios";
     $menu5 = "disciplinas";
     $menu6 = "salas";

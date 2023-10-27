@@ -391,15 +391,15 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
                     $res_r = $query_r->fetchAll(PDO::FETCH_ASSOC);
                     $nome_prof3 = $res_r[0]['nome'];
 
-                    /*$valor_mensF = number_format($valor_mensalidade3, 2, ',', '.');
+                    /*$valor_mensF = number_format($valor_mensalidade3, 2, ',', '.');*/
                     $data_inicioF = implode('/', array_reverse(explode('-', $data_inicio3)));
-                    $data_finalF = implode('/', array_reverse(explode('-', $data_final3)));*/
+                    $data_finalF = implode('/', array_reverse(explode('-', $data_final3)));
                     
                 } 
 
 
                 ?>
-
+                
                 <span><b>Disciplina: </b> <i><?php echo $nome_disc3 ?></i><br></span>
 
                 <span><b>Sala: </b> <i><?php echo $nome_sala3 ?></i> </span><span class="ml-4"><b>Professor: </b> <i><?php echo $nome_prof3 ?></i><br></span>
@@ -409,7 +409,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
                 <span><b>Horário: </b> <i><?php echo $horario3 ?></i> </span><span class="ml-4"><b>Dias: </b> <i><?php echo $dia3 ?></i><br></span>
 <!-- Modal -->
                <!-- <span><b>Valor Mensalidade: </b> <i>R$ <?php echo $valor_mensF ?></i> </span><span class="ml-4"><b>Ano: </b> <i><?php echo $ano3 ?></i><br></span>-->
-
+                <!-- AQUI -->
               <span><b>Total de Alunos: </b> <i><?php echo $total_alunos ?></i> </span>
 
                 
