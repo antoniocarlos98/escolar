@@ -247,7 +247,7 @@ require_once("verificar.php");
             <input value="<?php echo @$dia2 ?>" type="text" class="form-control" id="dia" name="dia" placeholder="Segunda à Sexta">
         </div>
     </div>
-    <!-- Modal -->
+    <!-- EXCLUIR -->
     <!--<div class="col-md-4">
        <div class="form-group">
         <label >Valor Mensalidade</label>
@@ -398,7 +398,7 @@ require_once("verificar.php");
                 <span><b>Data Início: </b> <i><?php echo $data_inicioF ?></i> </span><span class="ml-4"><b>Data Final: </b> <i><?php echo $data_finalF ?></i><br></span>
 
                 <span><b>Horário: </b> <i><?php echo $horario3 ?></i> </span><span class="ml-4"><b>Dias: </b> <i><?php echo $dia3 ?></i><br></span>
-<!-- Modal -->
+                <!-- EXCLUIR -->
                <!-- <span><b>Valor Mensalidade: </b> <i>R$ <?php echo $valor_mensF ?></i> </span><span class="ml-4"><b>Ano: </b> <i><?php echo $ano3 ?></i><br></span>-->
 
 
@@ -661,6 +661,7 @@ if (@$_GET["funcao"] != null && @$_GET["funcao"] == "confirmar") {
 
        $id_matricula = $pdo->lastInsertId();
 
+       //EXCLUIR
      //GERAR AS PARCELAS DE PAGAMENTO MATRICULA
      /*$query_r = $pdo->query("SELECT * FROM turmas where id = '$id_turma' ");
     $res_r = $query_r->fetchAll(PDO::FETCH_ASSOC);    
@@ -680,7 +681,7 @@ $meses = $intervalo->m + ($anos * 12);
     //INCREMENTAR 1 MES NA DATA INICIAL
          $data_nova = date('Y/m/d', strtotime("+$i month",strtotime($data_ini))); 
 
-         $res = $pdo->query("INSERT INTO pgto_matriculas SET matricula = '$id_matricula', valor = '$valor_turma', data_venc = '$data_nova', pago = 'Não'");
+         //$res = $pdo->query("INSERT INTO pgto_matriculas SET matricula = '$id_matricula', valor = '$valor_turma', data_venc = '$data_nova', pago = 'Não'");
 
 
     }

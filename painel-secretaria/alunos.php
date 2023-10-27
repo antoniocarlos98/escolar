@@ -431,8 +431,8 @@ require_once("verificar.php");
 
                   ?>
                   <span><?php echo $nome_disc ?>
-
-                  <a target="_blank" title="Gerar Contrato" href="../rel/contrato.php?id=<?php echo $id_m ?>"><span class="ml-2"><i class='fas fa-book-open text-primary'></i></span></a>
+                    <!-- EXCLUIR -->
+                 <!-- <a target="_blank" title="Gerar Contrato" href="../rel/contrato.php?id=<?php echo $id_m ?>"><span class="ml-2"><i class='fas fa-book-open text-primary'></i></span></a>-->
 
                   <a target="_blank" title="Gerar Declaração Matrícula" href="../rel/declaracao.php?id=<?php echo $id_m ?>"><span class="ml-2"><i class='far fa-sticky-note text-danger'></i></span></a>
 
