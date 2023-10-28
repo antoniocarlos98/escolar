@@ -254,7 +254,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                        <!--<span><small>
                              <?php if($atrasado == 'Sim'){ ?>
                              <a class="text-danger" href="index.php?pag=<?php echo $pag ?>&funcao=pagamentos&id=<?php echo $id_mat ?>"><i><?php echo $nome_disc; 
-                                 $atrasado = 'Não';
+                                 //$atrasado = 'Não';
                               ?></i>
                              <?php }else{ ?>
                                  <a class="text-dark" href="index.php?pag=<?php echo $pag ?>&funcao=pagamentos&id=<?php echo $id_mat ?>"><i><?php echo $nome_disc ?></i>
@@ -351,7 +351,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                       <!-- <span><small>
                              <?php if($atrasado == 'Sim'){ ?>
                              <span class="text-danger"><i><?php echo $data_venc; 
-                                 $atrasado = 'Não';
+                                 //$atrasado = 'Não';
                               ?></i></span>
                              <?php }else{ ?>
                                  <span class="text-dark"><i><?php echo $data_venc ?></i></span>
