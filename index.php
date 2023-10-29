@@ -147,7 +147,7 @@ if($total_reg == 0){
 				</div>
 				<div class="modal-footer">
 					<button id="btn-fechar" type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-					<button type="submit" class="btn btn-info">Recuperar</button>
+					<button type="submit" class="btn btn-primary">Recuperar</button>
 				</div>
 			</form>
 		</div>

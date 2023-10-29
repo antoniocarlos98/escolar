@@ -264,11 +264,11 @@ if($total_modulos > 0){
     <div class="card-body">
      <div class="row no-gutters align-items-center">
       <div class="col mr-2">
-       <div class="text-xs font-weight-bold  text-dark text-uppercase">FREQUÊNCIA</div>
+       <div class="text-xs font-weight-bold  text-primary text-uppercase">FREQUÊNCIA</div>
        <div class="text-xs text-secondary"> <span class="<?php echo $cor_presenca2 ?>"><?php echo $totalPorcentagemSomaF ?>% </span> DE FREQUÊNCIA</div>
      </div>
      <div class="col-auto" align="center">
-       <i class="fas fa-calendar-day fa-2x  text-dark"></i><br>
+       <i class="fas fa-calendar-day fa-2x  text-primary"></i><br>
        <span class="text-xs"></span>
      </div>
    </div>
@@ -304,15 +304,15 @@ if($total_modulos > 0){
 
 <div class="col-xl-3 col-md-6 mb-4">
 	<a class="text-dark" href="index.php?pag=turma&funcao=periodos&id=<?php echo $id_mat ?>&id_turma=<?php echo $id_turma ?>&aulas=sim" title="Aulas do Curso">
-   <div class="card text-info shadow h-100 py-2">
+   <div class="card text-primary shadow h-100 py-2">
     <div class="card-body">
      <div class="row no-gutters align-items-center">
       <div class="col mr-2">
-       <div class="text-xs font-weight-bold  text-info text-uppercase">AULAS</div>
+       <div class="text-xs font-weight-bold  text-primary text-uppercase">AULAS</div>
        <div class="text-xs text-secondary"> GRADE DO CURSO</div>
      </div>
      <div class="col-auto" align="center">
-       <i class="fas fa-video fa-2x  text-info"></i><br>
+       <i class="fas fa-video fa-2x  text-primary"></i><br>
        <span class="text-xs"></span>
      </div>
    </div>
