@@ -75,7 +75,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
 
                     <td>
 
-                       <a href="index.php?pag=<?php echo $pag ?>&funcao=endereco&id=<?php echo $id ?>" class='text-info mr-1' title='Dados do Aluno'><i class='fas fa-home'></i></a>
+                       <a href="index.php?pag=<?php echo $pag ?>&funcao=endereco&id=<?php echo $id ?>" class='text-primary mr-1' title='Dados do Aluno'><i class='fas fa-home'></i></a>
 
                         <a href="index.php?pag=<?php echo $pag ?>&funcao=turmas&id=<?php echo $id ?>" class='text-primary mr-1' title='Ver Turmas'><i class='fas fa-book-open'></i></a>
                    </td>

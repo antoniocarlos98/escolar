@@ -186,7 +186,7 @@ require_once("../conexao.php");
             <input value="<?php echo @$id_prof ?>" type="hidden" name="id_professor" id="id_professor">
                         
 
-            <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" id="btn-fechar" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
             <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary">Salvar</button>
         </div>
     </form>

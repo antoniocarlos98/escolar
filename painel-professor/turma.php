@@ -98,15 +98,15 @@ if($total_modulos > 0){
 
   <div class="col-xl-3 col-md-6 mb-4">
    <a class="text-dark" href="index.php?pag=turma&funcao=periodos&id=<?php echo $id_turma ?>&chamada=sim" title="Fazer Chamada">
-     <div class="card text-danger shadow h-100 py-2">
+     <div class="card text-primary shadow h-100 py-2">
       <div class="card-body">
        <div class="row no-gutters align-items-center">
         <div class="col mr-2">
-         <div class="text-xs font-weight-bold  text-danger text-uppercase">CHAMADA</div>
+         <div class="text-xs font-weight-bold  text-primary text-uppercase">CHAMADA</div>
          <div class="text-xs text-secondary"> <?php echo $total_alunos ?> ALUNOS MATRICULADOS</div>
        </div>
        <div class="col-auto" align="center">
-         <i class="far fa-calendar-alt fa-2x  text-danger"></i><br>
+         <i class="far fa-calendar-alt fa-2x  text-primary"></i><br>
          <span class="text-xs"></span>
        </div>
      </div>
@@ -142,15 +142,15 @@ if($total_modulos > 0){
 
 <div class="col-xl-3 col-md-6 mb-4">
 	<a class="text-dark" href="index.php?pag=turma&funcao=periodos&id=<?php echo $id_turma ?>&aulas=sim" title="Lançar Aulas">
-   <div class="card text-info shadow h-100 py-2">
+   <div class="card text-primary shadow h-100 py-2">
     <div class="card-body">
      <div class="row no-gutters align-items-center">
       <div class="col mr-2">
-       <div class="text-xs font-weight-bold  text-info text-uppercase">AULAS</div>
+       <div class="text-xs font-weight-bold  text-primary text-uppercase">AULAS</div>
        <div class="text-xs text-secondary"> GRADE DO CURSO</div>
      </div>
      <div class="col-auto" align="center">
-       <i class="fas fa-video fa-2x  text-info"></i><br>
+       <i class="fas fa-video fa-2x  text-primary"></i><br>
        <span class="text-xs"></span>
      </div>
    </div>
@@ -165,15 +165,15 @@ if($total_modulos > 0){
 
 <div class="col-xl-3 col-md-6 mb-4">
   <a class="text-dark" href="index.php?pag=periodos&id=<?php echo $id_turma ?>" title="Cadastro de Períodos">
-    <div class="card text-dark shadow h-100 py-2">
+    <div class="card text-primary shadow h-100 py-2">
       <div class="card-body">
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
-            <div class="text-xs font-weight-bold  text-dark text-uppercase">PERÍODOS</div>
+            <div class="text-xs font-weight-bold  text-primary text-uppercase">PERÍODOS</div>
             <div class="text-xs text-secondary"> PERÍODOS DO CURSO</div>
           </div>
           <div class="col-auto" align="center">
-            <i class="fas fa-calendar-day fa-2x  text-dark"></i><br>
+            <i class="fas fa-calendar-day fa-2x  text-primary"></i><br>
             <span class="text-xs"></span>
           </div>
         </div>
@@ -461,7 +461,7 @@ if($total_modulos > 0){
 
 
                     <td>
-                        <a onclick="lancarNotas(<?php echo $id_aluno ?>, '<?php echo $nome ?>', <?php echo $maximo_nota ?>)" href="" class='text-info mr-1' title='Lançar Notas'><i class='fas fa-sticky-note fa-1x'></i></a>
+                        <a onclick="lancarNotas(<?php echo $id_aluno ?>, '<?php echo $nome ?>', <?php echo $maximo_nota ?>)" href="" class='text-primary mr-1' title='Lançar Notas'><i class='fas fa-sticky-note fa-1x'></i></a>
                    </td>
                </tr>
            <?php } ?>
@@ -695,7 +695,7 @@ if($total_modulos > 0){
                         <a href="index.php?pag=<?php echo $pag ?>&funcao=falta&id_aluno=<?php echo $id_aluno ?>&id_aula=<?php echo $_GET['id_aula'] ?>&id=<?php echo $_GET['id'] ?>&id_periodo=<?php echo $_GET['id_periodo'] ?>" class='text-danger mr-1' title='Falta'><i class='<?php echo $classe_icone_F ?>'></i></a>
 
 
-                        <a href="index.php?pag=<?php echo $pag ?>&funcao=justificado&id_aluno=<?php echo $id_aluno ?>&id_aula=<?php echo $_GET['id_aula'] ?>&id=<?php echo $_GET['id'] ?>&id_periodo=<?php echo $_GET['id_periodo'] ?>" class='text-info mr-1' title='Justificar Falta'><i class='fas fa-question-circle fa-1x'></i></a>
+                        <a href="index.php?pag=<?php echo $pag ?>&funcao=justificado&id_aluno=<?php echo $id_aluno ?>&id_aula=<?php echo $_GET['id_aula'] ?>&id=<?php echo $_GET['id'] ?>&id_periodo=<?php echo $_GET['id_periodo'] ?>" class='text-primary mr-1' title='Justificar Falta'><i class='fas fa-question-circle fa-1x'></i></a>
 
                         <?php if($presenca != ""){ ?>
                         - <span class="<?php echo $classe_chamada ?>"><?php echo $presenca ?></span>
