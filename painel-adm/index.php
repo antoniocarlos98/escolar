@@ -64,7 +64,7 @@ $idUsuario = @$res[0]['id'];
         <div id="wrapper">
 
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
@@ -327,7 +327,7 @@ $idUsuario = @$res[0]['id'];
                             <input value="<?php echo $idUsuario ?>" type="hidden" name="id_usu" id="id_usu">
                             <input value="<?php echo $cpf_usu ?>" type="hidden" name="antigo_usu" id="antigo_usu">
 
-                            <button type="button" id="btn-fechar-perfil" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" id="btn-fechar-perfil" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                             <button type="submit" name="btn-salvar-perfil" id="btn-salvar-perfil" class="btn btn-primary">Salvar</button>
                         </div>
                     </form>
@@ -547,7 +547,7 @@ $idUsuario = @$res[0]['id'];
                         </div>
                         <div class="modal-footer">
 
-                            <button type="button" id="btn-fechar-config" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" id="btn-fechar-config" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                             <button type="submit" name="btn-salvar-config" id="btn-salvar-config" class="btn btn-primary">Salvar</button>
                         </div>
                     </form>

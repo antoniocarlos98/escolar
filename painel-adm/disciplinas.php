@@ -13,8 +13,8 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
 ?>
 
 <div class="row mt-4 mb-4">
-    <a type="button" class="btn-info btn-sm ml-3 d-none d-md-block" href="index.php?pag=<?php echo $pag ?>&funcao=novo">Nova Disciplina</a>
-    <a type="button" class="btn-info btn-sm ml-3 d-block d-sm-none" href="index.php?pag=<?php echo $pag ?>&funcao=novo">+</a>
+    <a type="button" class="btn-primary btn-sm ml-3 d-none d-md-block" href="index.php?pag=<?php echo $pag ?>&funcao=novo">Nova Disciplina</a>
+    <a type="button" class="btn-primary btn-sm ml-3 d-block d-sm-none" href="index.php?pag=<?php echo $pag ?>&funcao=novo">+</a>
     
 </div>
 
@@ -137,7 +137,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
             <input value="<?php echo @$nome2 ?>" type="hidden" name="antigo" id="antigo">
            
 
-            <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" id="btn-fechar" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
             <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary">Salvar</button>
         </div>
     </form>
