@@ -433,7 +433,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'tesoureir
                <div class="modal-footer">
 
             <input value="<?php echo @$_GET['id'] ?>" type="hidden" name="txtid2" id="txtid2">
-            <button type="button" id="btn-fechar-upload" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" id="btn-fechar-upload" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
             <button type="submit" name="btn-salvar-upload" id="btn-salvar-upload" class="btn btn-primary">Salvar</button>
         </div>
         </form>

@@ -342,7 +342,7 @@ $id_aluno = @$res[0]['id'];
                         <input value="<?php echo $idUsuario ?>" type="hidden" name="id_usu" id="id_usu">
                         <input value="<?php echo $cpf_usu ?>" type="hidden" name="antigo_usu" id="antigo_usu">
 
-                        <button type="button" id="btn-fechar-perfil" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" id="btn-fechar-perfil" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                         <button type="submit" name="btn-salvar-perfil" id="btn-salvar-perfil" class="btn btn-primary">Salvar</button>
                     </div>
                 </form>
