@@ -146,7 +146,7 @@ $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
   <img class="foto_aluno" src="../img/alunos/<?php echo $foto ?>" width="100%">  
 
-<img src="../img/a4.jpg" width="1200px">
+<img src="../img/aa4.jpg" width="1200px">
 
 </div>
 

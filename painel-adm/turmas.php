@@ -28,7 +28,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>Disciplina</th>
+                        <th>Turmas</th>
                         <th>Sala</th>
                         <th>Professor</th>
                         <th>Horário</th>
@@ -158,7 +158,7 @@ if(@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin'){
                         <div class="col-md-4">
 
                            <div class="form-group">
-                            <label >Disciplina</label>
+                            <label >Turma</label>
                             <select name="disciplina" class="form-control" id="disciplina">
 
                                 <?php 
