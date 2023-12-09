@@ -16,7 +16,7 @@ $query = $pdo->query("SELECT * FROM config");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_config = @count($res);
 if($total_config == 0){
-	$pdo->query("INSERT INTO config SET nome_escola = 'Escola Cesár Pinheiro', telefone_escola = '(00)00000-0000', email_adm = 'contato@hugocursos.com.br', endereco_escola = 'Rua X, Número 10 Bairro X', cidade_escola = 'Belo Horizonte', rodape_relatorios = 'Texto que vai aparecer no rodapé dos relatórios', cnpj_escola = '00000000000000', pgto_boleto = 'Sim', media_porcentagem_presenca = '70', media_pontos_minimo_aprovacao = '60', maximo_pontos_disciplina = '100', carga_horaria_cert = '250', ativo = 'Sim'");
+	$pdo->query("INSERT INTO config SET nome_escola = 'Escola Cesár Pinheiro', telefone_escola = '(00)00000-0000', email_adm = 'sistemaedusis@gmail.com', endereco_escola = 'Rua X, Número 10 Bairro X', cidade_escola = 'Mirasselvas-Capanema', rodape_relatorios = 'Texto que vai aparecer no rodapé dos relatórios', cnpj_escola = '00000000000000', media_porcentagem_presenca = '70', media_pontos_minimo_aprovacao = '60', maximo_pontos_disciplina = '100', carga_horaria_cert = '250', ativo = 'Sim'");
 }else{
 	$nome_escola = $res[0]['nome_escola'];
 	$telefone_escola = $res[0]['telefone_escola'];
@@ -25,7 +25,7 @@ if($total_config == 0){
 	$cidade_escola = $res[0]['cidade_escola'];
 	$rodape_relatorios = $res[0]['rodape_relatorios'];
 	$cnpj_escola = $res[0]['cnpj_escola'];
-	$pgto_boleto = $res[0]['pgto_boleto'];
+	//$pgto_boleto = $res[0]['pgto_boleto'];
 	$media_porcentagem_presenca = $res[0]['media_porcentagem_presenca'];
 	$media_pontos_minimo_aprovacao = $res[0]['media_pontos_minimo_aprovacao'];
 	$maximo_pontos_disciplina = $res[0]['maximo_pontos_disciplina'];

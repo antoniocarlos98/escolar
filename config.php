@@ -13,15 +13,6 @@ $senha = '';
 $banco = 'escolar';
 
 
-/*
-//VARIAVEIS DO BANCO DE DADOS HOSPEDADO
-$servidor = 'sh-pro24.hostgator.com.br';
-$usuario = 'hugocu75_escolar';
-$senha = 'escolarhugo';
-$banco = 'hugocu75_escolar';
-*/
-
-
 //PASSAMOS PARA UMA TABELA
 /*
 $nome_escola = "Escola Cesár Pinheiro";
