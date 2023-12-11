@@ -10,7 +10,7 @@ if($url_sistema[1] == 'localhost/'){
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
-$banco = 'escolar';
+$banco = 'sistem59_escolar';
 
 
 //PASSAMOS PARA UMA TABELA

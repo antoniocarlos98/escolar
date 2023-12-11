@@ -104,7 +104,7 @@ if($total_reg == 0){
 		<form method="post" action="autenticar.php">
 			<input class="input" type="text" name="email" placeholder="Email" required="required" value="" />
 			<input class="input" type="password" name="senha" placeholder="Senha" required="required" value=""/>
-			<button type="submit" class="btn btn-light btn-block btn-large">Logar</button>
+			<button type="submit" class="btn btn-primary btn-block btn-large">Logar</button>
 			<div align="center" class="mt-2">
 				<small><a href="" data-toggle="modal" data-target="#modalRecuperar" title="Clique para Recuperar sua Senha" class="text-light">Recuperar Senha?</a></small>
 			</div>
