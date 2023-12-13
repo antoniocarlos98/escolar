@@ -14,7 +14,7 @@ $total_periodos = @count($res);
 
 $query = $pdo->query("SELECT * FROM alunos where id = '$id_aluno'  order by id asc ");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
-$nome_aluno = $res[0]['nome'];
+$nome_aluno = @$res[0]['nome'];
 
 $query = $pdo->query("SELECT * FROM modulos where id = '$id_modulo'  order by id asc ");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);

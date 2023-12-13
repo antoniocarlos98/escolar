@@ -528,7 +528,7 @@ $idUsuario = @$res[0]['id'];
                                             </div>
 
                                             <div id="">                   
-                                                <img src="../img/logo.jpg" width="100" id="target_logo_rel">   
+                                                <img src="../img/cp.jpg" width="100" id="target_logo_rel">   
                                             </div>
                                      </div>
                                        

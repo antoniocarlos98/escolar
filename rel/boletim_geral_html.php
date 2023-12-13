@@ -234,7 +234,7 @@ if($total_notas < $minimo_media){
 		
 			<div class="row titulos">
 				<div class="col-sm-2 esquerda_float image">	
-					<img src="../img/logo.png" width="150" height="100">
+					<img src="../img/cp.png" width="140" height="90">
 				</div>
 				<div class="col-sm-10 esquerda_float">	
 					<h2 class="titulo"><b><?php echo mb_strtoupper($nome_escola) ?></b></h2>
