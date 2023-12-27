@@ -20,7 +20,7 @@ $endereco_escola = "Mirasselvas, Capanema-PA";
 $telefone_escola = "(91)98341-8008";
 $email_adm = 'admin@hotmail.com';
 $rodape_relatorios = "Desenvolvido por Antonio Carlos e João Pedro";
-$cnpj_escola = '26.100.560/0000-50';
+//$cnpj_escola = '26.100.560/0000-50';
 $cidade_escola = 'Capanema';
 
 //VARIAVEIS GLOBAIS
