@@ -180,7 +180,7 @@ require_once("verificar.php");
                         <label >Sexo</label>
                         <select name="sexo" class="form-control" id="sexo">
                             <option <?php if(@$sexo2 == 'M'){ ?> selected <?php } ?> value="M">M</option>
-                            <option <?php if(@$tipo_pessoa2 == 'F'){ ?> selected <?php } ?> value="F">F</option>
+                            <option <?php if(@$sexo2 == 'F'){ ?> selected <?php } ?> value="F">F</option>
 
                         </select>
                     </div>
