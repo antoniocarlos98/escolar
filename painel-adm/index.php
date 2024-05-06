@@ -298,6 +298,19 @@ $idUsuario = @$res[0]['id'];
                                         <input value="<?php echo $cpf_usu ?>" type="text" class="form-control" id="cpf_usu" name="cpf_usu" placeholder="CPF">
                                     </div>
 
+                                    <!-- Inclua o jQuery -->
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                    <!-- Inclua o jQuery Mask Plugin -->
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+                                    <script>
+                                    // Aplicar a máscara ao campo CPF
+                                    $(document).ready(function(){
+                                    $('#cpf_usu').mask('000.000.000-00', {reverse: true});
+                                        });
+                                    </script>
+
+
                                     <div class="form-group">
                                         <label >Email</label>
                                         <input value="<?php echo $email_usu ?>" type="email" class="form-control" id="email_usu" name="email_usu" placeholder="Email">
