@@ -157,7 +157,7 @@ if($total_reg == 0){
 
 
 <!--AJAX PARA INSERÇÃO E EDIÇÃO DOS DADOS COM OU SEM IMAGEM -->
-<script type="text/javascript"'>
+<script type="text/javascript">
 	$("#form").submit(function () {
 		
 		event.preventDefault();
