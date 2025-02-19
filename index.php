@@ -99,7 +99,7 @@ if($total_reg == 0){
 
 	<div class="login">
 		<div align="center" class="mb-4">
-			<img src="img\logoedusis.png" width="270" >
+			<img src="img\Ledusuis.png" width="270" >
 		</div>
 		<form method="post" action="autenticar.php">
 			<input class="input" type="text" name="email" placeholder="Email" required="required" value="" />
@@ -110,7 +110,6 @@ if($total_reg == 0){
 			</div>
 		</form>
 	</div>
-
 
 
 </script>
@@ -157,7 +156,7 @@ if($total_reg == 0){
 
 
 <!--AJAX PARA INSERÇÃO E EDIÇÃO DOS DADOS COM OU SEM IMAGEM -->
-<script type="text/javascript"'>
+<script type="text/javascript">
 	$("#form").submit(function () {
 		
 		event.preventDefault();
