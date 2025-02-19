@@ -112,7 +112,6 @@ if($total_reg == 0){
 	</div>
 
 
-
 </script>
 </body>
 </html>
